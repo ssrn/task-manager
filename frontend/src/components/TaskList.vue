@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import type { Task, TaskType } from '@shared/types/TaslkList'
+import type { Task } from '@shared/types/TaslkList'
 import TaskContent from './TaskContent.vue'
-import IconCircle from './icons/IconCircle.vue'
-import IconRectangle from './icons/IconRectangle.vue'
-import IconTriangle from './icons/IconTriangle.vue'
 
 const props = defineProps<{
   incompleteTasks: Task[]
@@ -44,7 +41,7 @@ const emit = defineEmits<{
 .completed-task {
   position: relative;
   padding-left: 5px;
-  
+
   &::after {
     content: '';
     position: absolute;
