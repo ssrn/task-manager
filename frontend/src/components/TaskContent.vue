@@ -7,17 +7,17 @@ import IconTriangle from './icons/IconTriangle.vue'
 
 const props = defineProps<{ task: Task }>()
 
-const getIconComponent = (type: string) => {
+const getTypeIconComponent = (type: string) => {
   switch (type) {
     case 'circle': return IconCircle
     case 'rectangle': return IconRectangle
     case 'triangle': return IconTriangle
-    default: return null
+    default: return 'circle'
   }
 }
 </script>
 
 <template>
   <span>{{ task.name }}</span>
-  <component :is="getIconComponent(task.type)" />
+  <component :is="getTypeIconComponent(task.type)" />
 </template>
