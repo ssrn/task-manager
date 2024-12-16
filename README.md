@@ -11,12 +11,12 @@ A modern task management application built with Vue 3, TypeScript, and Express.j
     - `git clone git@github.com:ssrn/task-manager.git`
     - `cd task-manager`
 
-### 2. Backend Setup
+### Backend Setup
 - `cd backend`
 - `npm install`
 - `npm run dev` # Starts backend server on http://localhost:3000
 
-### 3. Frontend Setup
+### Frontend Setup
 - `cd frontend`
 - `npm install`
 - `npm run dev`
