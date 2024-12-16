@@ -25,9 +25,9 @@ const getIconComponent = (type: TaskType) => {
   <v-card>
     <v-card-title class="text-h5">All Tasks Completed!</v-card-title>
     <v-card-text>
-      <template v-for="(task, index) in completedTasks" :key="task.id">
-          <component :is="getIconComponent(task.type)" />
-        </template>
+      <template v-for="task in completedTasks" :key="task.id">
+        <component :is="getIconComponent(task.type)" />
+      </template>
     </v-card-text>
   </v-card>
 </template>
